@@ -65,7 +65,7 @@
                     <?php } ?>
                 </div>
                 <?php if( display_header_text() ) { ?>
-                <div class="tagline"><?php $tagline = get_bloginfo('description'); if($tagline != '') { ?><p><?php echo esc_html($tagline); ?></p><?php } ?></div>
+                                <div class="tagline"><img class="sprinkle-icon" src="http://localhost:8888/wp-content/uploads/2017/05/beforeSprinkle.png"><?php $tagline = get_bloginfo('description'); if($tagline != '') { ?><p><?php echo esc_html($tagline); ?></p><?php } ?><img class="sprinkle-icon" src="http://localhost:8888/wp-content/uploads/2017/05/afterSprinkle.png"></div>
                 <?php } ?>
             </div>
             <!-- /Header Row 2 -->
