@@ -9226,6 +9226,29 @@ h1.navbar-brand a:hover {
 .gallery-caption {
   display: block; }
 
+/* ------ Header Jumbotron Styling ------- */
+.jumbotron {
+  padding: 0px;
+  background-color: white; }
+
+.jumbotron > .container {
+  height: 300px;
+  overflow: hidden;
+  /*width: 100%;*/
+  /*padding: 0px;*/ }
+
+#header-text {
+  position: relative;
+  top: 46%;
+  left: 10%;
+  z-index: 100; }
+
+#jumbo-header-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
