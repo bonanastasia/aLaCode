@@ -16,40 +16,40 @@ if($kale_frontpage_featured_posts_show == 1) {
     $kale_entry = 'small'; ?>
     <!-- Frontpage Featured Posts -->
     <div class="frontpage-featured-posts">
-        <h2 class="block-title"><img class="sprinkle-icon" src="http://i36.photobucket.com/albums/e26/anagoodwin/beforeSprinkle_zpsm6ktozfp.png"><span><?php echo esc_html($kale_frontpage_featured_posts_heading); ?></span><img class="sprinkle-icon" src="http://oi36.photobucket.com/albums/e26/anagoodwin/e54a5f48-ba34-4156-af86-67bd7979c43a_zpskrrwhgxm.png"></h2>
+        <h2 class="block-title"><span><?php echo esc_html($kale_frontpage_featured_posts_heading); ?></span></h2>
         <div class="row" data-fluid=".entry-title">
             <div class="col-md-4">
                 <?php 
                 $post = get_post($kale_frontpage_featured_posts_post_1); 
                 if($post) {
-                    setup_postdata($post); 
-                    include(locate_template('parts/entry.php'));
-                    wp_reset_postdata(); 
-                }
+					setup_postdata($post); 
+					include(locate_template('parts/entry.php'));
+					wp_reset_postdata(); 
+				}
                 ?>
             </div>
             <div class="col-md-4">
                 <?php 
                 $post = get_post($kale_frontpage_featured_posts_post_2); 
-                if($post) {
-                    setup_postdata($post); 
-                    include(locate_template('parts/entry.php'));
-                    wp_reset_postdata(); 
-                }
+				if($post) {
+					setup_postdata($post); 
+					include(locate_template('parts/entry.php'));
+					wp_reset_postdata(); 
+				}
                 ?>
             </div>
             <div class="col-md-4">
                 <?php 
                 $post = get_post($kale_frontpage_featured_posts_post_3); 
-                if($post) {
-                    setup_postdata($post); 
-                    include(locate_template('parts/entry.php'));
-                    wp_reset_postdata(); 
-                }
+				if($post) {
+					setup_postdata($post); 
+					include(locate_template('parts/entry.php'));
+					wp_reset_postdata(); 
+				}
                 ?>
             </div>
         </div>
     <hr />
-    </div>
-    <!-- /Frontpage Featured Posts -->
+	</div>
+	<!-- /Frontpage Featured Posts -->
 <?php } ?>

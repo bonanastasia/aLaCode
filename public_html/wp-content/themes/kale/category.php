@@ -9,7 +9,7 @@
 
 <!-- Full Width Category -->
 <div class="full-width-category">
-    <h1 class="block-title"><img class="sprinkle-icon" src="http://i36.photobucket.com/albums/e26/anagoodwin/beforeSprinkle_zpsm6ktozfp.png"><span><?php single_cat_title(); ?></span><img class="sprinkle-icon" src="http://oi36.photobucket.com/albums/e26/anagoodwin/e54a5f48-ba34-4156-af86-67bd7979c43a_zpskrrwhgxm.png"></h1>
+    <h1 class="block-title"><span><?php single_cat_title(); ?></span></h1>
     
     <!-- Blog Feed -->
     <div class="blog-feed">
