@@ -75,7 +75,7 @@
             <div class="header-row-3">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">
+                        <h3 type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">Menu</h3>
                         <span class="sr-only"><?php esc_html_e('Toggle Navigation', 'kale'); ?></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
