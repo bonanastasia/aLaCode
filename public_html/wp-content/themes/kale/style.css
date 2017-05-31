@@ -32,7 +32,7 @@ Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, flexib
 ------------------------------------------------------------------------*/
 
 body{font-family: 'Lato', sans-serif;color:#545454;font-size:13px}
-body.custom-background .main-wrapper{margin:0 auto;background-color:#ffffff;box-shadow:0 0 50px rgba(0,0,0,0.06)}
+body.custom-background .main-wrapper{margin:0 auto;background-color:#ffffff;box-shadow:0 0 50px rgba(0,0,0,0.08)}
 
 img.pull-left{margin-right:10px;margin-bottom:5px}
 img.pull-right{margin-left:10px;margin-bottom:5px}
@@ -632,8 +632,10 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 @media (max-width:767px){
 	body.custom-background .main-wrapper{width:auto;margin-left:15px;margin-right:15px}
     .logo .header-logo-text{line-height:30px;font-size:48px;}
+     body.custom-background{background-image: none !important;}
 }
 @media (min-width: 1500px) {
+
 	.container {width: 1230px;}
 	.main_search{width:183px}
 }
