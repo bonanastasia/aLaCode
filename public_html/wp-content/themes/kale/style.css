@@ -59,7 +59,7 @@ h6{font-size:12px;}
 .block-title{text-align:center;letter-spacing:2px;position:relative;margin:0 0 35px}
 .block-title span{display:inline-block;max-width:100%;position:relative;padding:0 26px}
 .block-title span:before,
-.block-title span:after{content:"";position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
+.block-title span:after{/*content:"";*/position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
 .block-title span:after{left:auto;right:0}
         
 /* --- Fonts --- */
