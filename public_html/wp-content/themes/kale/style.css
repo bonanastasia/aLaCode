@@ -63,7 +63,7 @@ h6{font-size:12px;}
 .block-title span:after{left:auto;right:0}
         
 /* --- Fonts --- */
-.logo .header-logo-text{line-height:60px;font-size:75px;font-weight:200;font-family: 'watermelon', sans-serif;text-transform:none;}
+.logo .header-logo-text{line-height:60px;font-size:75px;font-weight:200;font-family: 'watermelon', sans-serif;text-transform:none; padding-bottom: 10px;}
 .tagline{font-family: 'Raleway', cursive; font-size:14px;}
 
 .form-label{text-transform:uppercase;font-weight:400;font-family: 'Montserrat', sans-serif;}
@@ -627,6 +627,7 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 }
 @media (min-width:768px) and (max-width:880px){
 	body.custom-background .main-wrapper{width:750px}
+	.container {width: 1230px; margin-top: 70px;}
 }
 @media (max-width:767px){
 	body.custom-background .main-wrapper{width:auto;margin-left:15px;margin-right:15px}

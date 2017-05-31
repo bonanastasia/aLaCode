@@ -1587,10 +1587,12 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 70px;
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 992px) {
