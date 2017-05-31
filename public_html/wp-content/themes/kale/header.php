@@ -75,7 +75,7 @@
             <div class="header-row-3">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <h3 type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">Menu</h3>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">
                         <span class="sr-only"><?php esc_html_e('Toggle Navigation', 'kale'); ?></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -87,7 +87,7 @@
                         $args = array('theme_location'    => 'header', 
                                       'depth'             => 2,
                                       'container'         => 'div',
-                                      'container_class'   => 'navbar-collapse collapse mobile-border',
+                                      'container_class'   => 'navbar-collapse collapse',
                                       'menu_class'        => 'nav navbar-nav',
                                       'fallback_cb'       => '',
                                       'walker'            => new wp_bootstrap_navwalker() );
