@@ -10,7 +10,7 @@ Template Name: About Template
 
 <div class="blog-feed">
 <!-- Two Columns -->
-<div class="row two-columns">
+<div class="row two-columns" id="about-top">
 	<main class= "about-main">
 			<section class="team-about-section">
 				<div class="row">
