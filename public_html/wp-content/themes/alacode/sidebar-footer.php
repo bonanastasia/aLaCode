@@ -2,7 +2,7 @@
 /**
 * The template for displaying the footer widgets
 *
-* @package kale
+* @package aLaCode
 */
 ?>
 
@@ -23,7 +23,7 @@
     if ( is_active_sidebar( 'footer-row-2-col-3' ) ) $active_sidebar++; 
     if ( is_active_sidebar( 'footer-row-2-col-4' ) ) $active_sidebar++;  
     if ( is_active_sidebar( 'footer-row-2-col-5' ) ) $active_sidebar++;  
-    $class = kale_get_bootstrap_class($active_sidebar);
+    $class = aLaCode_get_bootstrap_class($active_sidebar);
     if($active_sidebar > 0) {
     ?>
     <div class="row footer-row-2">

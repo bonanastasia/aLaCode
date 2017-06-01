@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @package kale  
+ * @package aLaCode  
  *
  */
 ?>
@@ -15,8 +15,8 @@
         
         <!-- Page Content -->
         <div class="error-404">
-            <h1 class="entry-title"><?php _e('404', 'kale'); ?></h1>
-            <h3><?php _e('Page Not Found', 'kale'); ?></h3>
+            <h1 class="entry-title"><?php _e('404', 'aLaCode'); ?></h1>
+            <h3><?php _e('Page Not Found', 'aLaCode'); ?></h3>
         </div>
         <!-- /Page Content -->
         

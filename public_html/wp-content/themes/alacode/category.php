@@ -2,7 +2,7 @@
 /**
 * The category template file.
 * 
-* @package kale
+* @package aLaCode
 */
 ?>
 <?php get_header(); ?>
@@ -13,12 +13,12 @@
     
     <!-- Blog Feed -->
     <div class="blog-feed">
-        <?php $kale_i = 0; 
+        <?php $aLaCode_i = 0; 
         if ( have_posts() ) { 
             while ( have_posts() ) : the_post(); ?>
-            <?php if($kale_i%3 == 0) { ?><div class="row" data-fluid=".entry-title"><?php } ?>
-            <div class="col-md-4"><?php $kale_entry = 'small'; include(locate_template('parts/entry.php')); $kale_i++; ?></div>
-            <?php if($kale_i%3 == 0) { ?></div><?php } ?>
+            <?php if($aLaCode_i%3 == 0) { ?><div class="row" data-fluid=".entry-title"><?php } ?>
+            <div class="col-md-4"><?php $aLaCode_entry = 'small'; include(locate_template('parts/entry.php')); $aLaCode_i++; ?></div>
+            <?php if($aLaCode_i%3 == 0) { ?></div><?php } ?>
             <?php 
             endwhile; 
         }?>
@@ -28,8 +28,8 @@
     <?php if(get_next_posts_link() || get_previous_posts_link()) { ?>
     <hr />
     <div class="pagination-blog-feed">
-        <?php if( get_next_posts_link() ) { ?><div class="previous_posts"><?php next_posts_link( esc_html__('Previous Posts', 'kale') ); ?></div><?php } ?>
-        <?php if( get_previous_posts_link() ) { ?><div class="next_posts"><?php previous_posts_link( esc_html__('Next Posts', 'kale') ); ?></div><?php } ?>
+        <?php if( get_next_posts_link() ) { ?><div class="previous_posts"><?php next_posts_link( esc_html__('Previous Posts', 'aLaCode') ); ?></div><?php } ?>
+        <?php if( get_previous_posts_link() ) { ?><div class="next_posts"><?php previous_posts_link( esc_html__('Next Posts', 'aLaCode') ); ?></div><?php } ?>
     </div>
     <?php } ?>
 </div>

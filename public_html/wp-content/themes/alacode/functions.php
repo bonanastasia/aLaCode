@@ -2,7 +2,7 @@
 /**
  * aLaCode functions and definitions
  *
- * @package kale
+ * @package aLaCode
  */
 ?>
 <?php
@@ -18,29 +18,29 @@ require get_template_directory() . '/customize/theme-defaults.php';
 require get_template_directory() . '/customize/kirki-config.php';
 require get_template_directory() . '/customize/customizer.php';
 
-function kale_customize_register( $wp_customize ) {
+function aLaCode_customize_register( $wp_customize ) {
     $wp_customize->remove_control('header_textcolor');
-    $wp_customize->get_section('colors')->title = esc_html__( 'Custom Colors', 'kale' );
+    $wp_customize->get_section('colors')->title = esc_html__( 'Custom Colors', 'aLaCode' );
     $wp_customize->get_section('colors')->priority = 75;
 }
-add_action( 'customize_register', 'kale_customize_register' );
+add_action( 'customize_register', 'aLaCode_customize_register' );
 
-if(is_admin())  add_action( 'customize_controls_enqueue_scripts', 'kale_custom_customize_enqueue' );
-function kale_custom_customize_enqueue() {
-    wp_enqueue_style( 'kale-customizer', get_template_directory_uri() . '/customize/style.css' );
+if(is_admin())  add_action( 'customize_controls_enqueue_scripts', 'aLaCode_custom_customize_enqueue' );
+function aLaCode_custom_customize_enqueue() {
+    wp_enqueue_style( 'aLaCode-customizer', get_template_directory_uri() . '/customize/style.css' );
 }
 
 /*------------------------------
  Setup
  ------------------------------*/
 
-function kale_setup() {
+function aLaCode_setup() {
     
-    global $kale_defaults;
+    global $aLaCode_defaults;
     
-    load_theme_textdomain( 'kale', get_template_directory() . '/languages' ); 
+    load_theme_textdomain( 'aLaCode', get_template_directory() . '/languages' ); 
     
-    register_nav_menus( array('header' => esc_html__( 'Main Menu', 'kale' )) );
+    register_nav_menus( array('header' => esc_html__( 'Main Menu', 'aLaCode' )) );
     
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'title-tag' );
@@ -53,25 +53,25 @@ function kale_setup() {
         'width'         => 1200,
         'flex-height'    => true,
         'height'        => 550,
-        'default-image' => $kale_defaults['kale_custom_header'],
+        'default-image' => $aLaCode_defaults['aLaCode_custom_header'],
     );
     add_theme_support( 'custom-header', $args );
 
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 760, 400, true );
-    add_image_size( 'kale-slider', 1200, 550, true );
-    add_image_size( 'kale-thumbnail', 760, 400, true );
+    add_image_size( 'aLaCode-slider', 1200, 550, true );
+    add_image_size( 'aLaCode-thumbnail', 760, 400, true );
 
     add_post_type_support('page', 'excerpt');
     
     #https://make.wordpress.org/core/2016/11/26/extending-the-custom-css-editor/
     if ( function_exists( 'wp_update_custom_css_post' ) ) {
-        $css = kale_get_option('kale_advanced_css');
+        $css = aLaCode_get_option('aLaCode_advanced_css');
         if ( $css ) {
             $core_css = wp_get_custom_css(); 
             $return = wp_update_custom_css_post( $core_css . $css );
             if ( ! is_wp_error( $return ) ) {
-                remove_theme_mod( 'kale_advanced_css' );
+                remove_theme_mod( 'aLaCode_advanced_css' );
             }
         }
     }
@@ -84,13 +84,13 @@ function kale_setup() {
 		add_theme_support( 'woocommerce' );
 	}
 }
-add_action( 'after_setup_theme', 'kale_setup' );
+add_action( 'after_setup_theme', 'aLaCode_setup' );
 
 /*------------------------------
  Styles and Scripts
  ------------------------------*/
 
-function kale_scripts() {
+function aLaCode_scripts() {
     
     /* Styles */
     
@@ -100,29 +100,29 @@ function kale_scripts() {
     wp_register_style('owl-carousel', get_template_directory_uri().'/assets/css/owl.carousel.css' );
 
     //fonts
-    wp_enqueue_style('kale-googlefont1', '//fonts.googleapis.com/css?family=Montserrat:400,700'); #headings
-    wp_enqueue_style('kale-googlefont2', '//fonts.googleapis.com/css?family=Lato:400,700,300,300italic,400italic,700italic'); #body
-    wp_enqueue_style('kale-googlefont3', '//fonts.googleapis.com/css?family=Raleway:200'); #logo
-    wp_enqueue_style('kale-googlefont4', '//fonts.googleapis.com/css?family=Caveat'); #tagline
+    wp_enqueue_style('aLaCode-googlefont1', '//fonts.googleapis.com/css?family=Montserrat:400,700'); #headings
+    wp_enqueue_style('aLaCode-googlefont2', '//fonts.googleapis.com/css?family=Lato:400,700,300,300italic,400italic,700italic'); #body
+    wp_enqueue_style('aLaCode-googlefont3', '//fonts.googleapis.com/css?family=Raleway:200'); #logo
+    wp_enqueue_style('aLaCode-googlefont4', '//fonts.googleapis.com/css?family=Caveat'); #tagline
     
     //default stylesheet
     $deps = array('bootstrap', 'bootstrap-select', 'font-awesome', 'owl-carousel');
-    wp_enqueue_style('kale-style', get_stylesheet_uri(), $deps );
-    wp_style_add_data( 'kale-style', 'rtl', 'replace' );
+    wp_enqueue_style('aLaCode-style', get_stylesheet_uri(), $deps );
+    wp_style_add_data( 'aLaCode-style', 'rtl', 'replace' );
 	
     /* Scripts */
     
     // Load html5shiv.min.js
-	wp_enqueue_script( 'kale-html5', get_template_directory_uri() . '/assets/js/html5shiv.min.js', array(), '3.7.0' );
-	wp_script_add_data( 'kale-html5', 'conditional', 'lt IE 9' );
+	wp_enqueue_script( 'aLaCode-html5', get_template_directory_uri() . '/assets/js/html5shiv.min.js', array(), '3.7.0' );
+	wp_script_add_data( 'aLaCode-html5', 'conditional', 'lt IE 9' );
     // Load respond.min.js
-	wp_enqueue_script( 'kale-respond', get_template_directory_uri() . '/assets/js/respond.min.js', array(), '1.3.0' );
-	wp_script_add_data( 'kale-respond', 'conditional', 'lt IE 9' );
+	wp_enqueue_script( 'aLaCode-respond', get_template_directory_uri() . '/assets/js/respond.min.js', array(), '1.3.0' );
+	wp_script_add_data( 'aLaCode-respond', 'conditional', 'lt IE 9' );
     
     wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'), '', true );
     wp_enqueue_script('bootstrap-select', get_template_directory_uri() . '/assets/js/bootstrap-select.min.js', array('jquery','bootstrap'), '', true );
     wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '', true );
-    wp_enqueue_script('kale-js', get_template_directory_uri() . '/assets/js/kale.js', array('jquery'), '', true );
+    wp_enqueue_script('aLaCode-js', get_template_directory_uri() . '/assets/js/aLaCode.js', array('jquery'), '', true );
     
     //comments
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -130,42 +130,42 @@ function kale_scripts() {
     }
     
 }
-add_action( 'wp_enqueue_scripts', 'kale_scripts' );
+add_action( 'wp_enqueue_scripts', 'aLaCode_scripts' );
 
 /*------------------------------
  Custom CSS
  ------------------------------*/
 
-if ( ! function_exists( 'kale_custom_css_banner_overlay' ) ) :
-function kale_custom_css_banner_overlay(){ 
-	global $kale_defaults;
-    $kale_frontpage_banner_overlay_color = kale_get_option('kale_frontpage_banner_overlay_color');
-	$kale_frontpage_banner_overlay_show = kale_get_option('kale_frontpage_banner_overlay_show');
-    if($kale_frontpage_banner_overlay_show == 0){
+if ( ! function_exists( 'aLaCode_custom_css_banner_overlay' ) ) :
+function aLaCode_custom_css_banner_overlay(){ 
+	global $aLaCode_defaults;
+    $aLaCode_frontpage_banner_overlay_color = aLaCode_get_option('aLaCode_frontpage_banner_overlay_color');
+	$aLaCode_frontpage_banner_overlay_show = aLaCode_get_option('aLaCode_frontpage_banner_overlay_show');
+    if($aLaCode_frontpage_banner_overlay_show == 0){
 		echo "<style>";
 		echo ".frontpage-banner:before, .frontpage-slider .item:before{content:none;}";
 		echo "</style>";
-	} else if($kale_frontpage_banner_overlay_color != $kale_defaults['kale_frontpage_banner_overlay_color']) {
+	} else if($aLaCode_frontpage_banner_overlay_color != $aLaCode_defaults['aLaCode_frontpage_banner_overlay_color']) {
 		echo "<style>";
-		echo ".frontpage-banner:before, .frontpage-slider .item:before{background-color:".esc_attr($kale_frontpage_banner_overlay_color).";}"; 
+		echo ".frontpage-banner:before, .frontpage-slider .item:before{background-color:".esc_attr($aLaCode_frontpage_banner_overlay_color).";}"; 
 		echo "</style>";
 	}
 } 
 endif;
-add_action('wp_head','kale_custom_css_banner_overlay', 98);
+add_action('wp_head','aLaCode_custom_css_banner_overlay', 98);
 
-if ( ! function_exists( 'kale_custom_css' ) ) :
-function kale_custom_css() {
-    $kale_advanced_css = kale_get_option('kale_advanced_css');
-    if($kale_advanced_css != '') {    
+if ( ! function_exists( 'aLaCode_custom_css' ) ) :
+function aLaCode_custom_css() {
+    $aLaCode_advanced_css = aLaCode_get_option('aLaCode_advanced_css');
+    if($aLaCode_advanced_css != '') {    
         echo '<!-- Custom CSS -->';
-        $output = "<style>" . wp_strip_all_tags($kale_advanced_css) . "</style>";
+        $output = "<style>" . wp_strip_all_tags($aLaCode_advanced_css) . "</style>";
         echo $output;
         echo '<!-- /Custom CSS -->';
     }
 }
 endif;
-add_action('wp_head','kale_custom_css', 99);
+add_action('wp_head','aLaCode_custom_css', 99);
 
 
 /*------------------------------
@@ -190,8 +190,8 @@ require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
  ------------------------------*/
 
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
-add_action( 'tgmpa_register', 'kale_register_required_plugins' );
-function kale_register_required_plugins() {
+add_action( 'tgmpa_register', 'aLaCode_register_required_plugins' );
+function aLaCode_register_required_plugins() {
 	$plugins = array(
         array(
 			'name'      => 'Recent Posts Widget With Thumbnails',
@@ -200,7 +200,7 @@ function kale_register_required_plugins() {
 		),
 	);
 	$config = array(
-		'id'           => 'kale',                  // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'aLaCode',                  // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'has_notices'  => true,                    // Show admin notices or not.
@@ -217,30 +217,30 @@ function kale_register_required_plugins() {
  ------------------------------*/
 
 #move comment field to the bottom of the comments form
-function kale_move_comment_field_to_bottom( $fields ) {
+function aLaCode_move_comment_field_to_bottom( $fields ) {
     $comment_field = $fields['comment'];
     unset( $fields['comment'] );
     $fields['comment'] = $comment_field;
     return $fields;
 }
-add_filter( 'comment_form_fields', 'kale_move_comment_field_to_bottom' );
+add_filter( 'comment_form_fields', 'aLaCode_move_comment_field_to_bottom' );
 
 #excerpt length
-function kale_excerpt_length( $length ) {
+function aLaCode_excerpt_length( $length ) {
 	return 45;
 }
-add_filter( 'excerpt_length', 'kale_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'aLaCode_excerpt_length', 999 );
 
 #add class to page nav
-function kale_wp_page_menu_class( $class ) {
+function aLaCode_wp_page_menu_class( $class ) {
   return preg_replace( '/<ul>/', '<ul class="nav navbar-nav">', $class, 1 );
 }
-add_filter( 'wp_page_menu', 'kale_wp_page_menu_class' );
+add_filter( 'wp_page_menu', 'aLaCode_wp_page_menu_class' );
 
 //https://gist.github.com/hatsumatsu/e5df3b0bf9ac3389c0b0
 #doesn't work?
-add_filter('embed_oembed_html', 'kale_embed_oembed_html', 10, 4);
-function kale_embed_oembed_html($html, $url, $attr, $post_id) {
+add_filter('embed_oembed_html', 'aLaCode_embed_oembed_html', 10, 4);
+function aLaCode_embed_oembed_html($html, $url, $attr, $post_id) {
 	$class = ' ';
 	if( strpos( $url, 'youtu' ) || strpos( $url, 'vimeo' ) ) {
 		$class .= ' iframe-video';
@@ -251,50 +251,50 @@ function kale_embed_oembed_html($html, $url, $attr, $post_id) {
 
 
 #get_the_archive_title
-function kale_archive_title( $title ) {
+function aLaCode_archive_title( $title ) {
     if( is_home() && get_option('page_for_posts') ) {
         $title = get_page( get_option('page_for_posts') )->post_title;
     }
     else if( is_home() ) {
-        $title = kale_get_option('kale_blog_feed_label');
+        $title = aLaCode_get_option('aLaCode_blog_feed_label');
         $title = esc_html($title);
     }  
     return $title;
 }
-add_filter( 'get_the_archive_title', 'kale_archive_title' );
+add_filter( 'get_the_archive_title', 'aLaCode_archive_title' );
 
 /*------------------------------
  Top Navigation
  ------------------------------*/
  
 #add search form to nav
-function kale_nav_items_wrap() {
+function aLaCode_nav_items_wrap() {
     // default value of 'items_wrap' is <ul id="%1$s" class="%2$s">%3$s</ul>'
     // open the <ul>, set 'menu_class' and 'menu_id' values
     $wrap  = '<ul id="%1$s" class="%2$s">';
     // get nav items as configured in /wp-admin/
     $wrap .= '%3$s';
     // the static link 
-    $wrap .= kale_get_nav_search_item();
+    $wrap .= aLaCode_get_nav_search_item();
     // close the <ul>
     $wrap .= '</ul>';
     // return the result
     return $wrap;
 }
 
-function kale_get_nav_search_item(){
+function aLaCode_get_nav_search_item(){
     return '<li class="search">
         <a href="javascript:;" id="toggle-main_search" data-toggle="dropdown"><i class="fa fa-search"></i></a>
         <div class="dropdown-menu main_search">
             <form name="main_search" method="get" action="'.esc_url(home_url( '/' )).'">
-                <input type="text" name="s" class="form-control" placeholder="'. esc_attr(__('Type here','kale')).'" />
+                <input type="text" name="s" class="form-control" placeholder="'. esc_attr(__('Type here','aLaCode')).'" />
             </form>
         </div>
     </li>';
 }
 
 #default nav top level pages
-function kale_default_nav(){
+function aLaCode_default_nav(){
     echo '<div class="navbar-collapse collapse">';
     echo '<ul class="nav navbar-nav">';
     $pages = get_pages();  
@@ -309,7 +309,7 @@ function kale_default_nav(){
         echo "<li class='page_item ".esc_attr($menu_class)." $current_class'><a href='".esc_url($menu_link)."'>".esc_html($menu_name)."</a></li>";
         $i++;
         if($n == $i){
-            echo kale_get_nav_search_item();
+            echo aLaCode_get_nav_search_item();
         }
     } 
     echo '</ul>';
@@ -320,19 +320,19 @@ function kale_default_nav(){
  Helper
  ------------------------------*/
  
-if ( ! function_exists( 'kale_get_option' ) ) :
-function kale_get_option($key){
-    global $kale_defaults;
-    if (array_key_exists($key, $kale_defaults)) 
-        $value = get_theme_mod($key, $kale_defaults[$key]); 
+if ( ! function_exists( 'aLaCode_get_option' ) ) :
+function aLaCode_get_option($key){
+    global $aLaCode_defaults;
+    if (array_key_exists($key, $aLaCode_defaults)) 
+        $value = get_theme_mod($key, $aLaCode_defaults[$key]); 
     else
         $value = get_theme_mod($key);
     return $value;
 }
 endif;
 
-if ( ! function_exists( 'kale_get_bootstrap_class' ) ) :
-function kale_get_bootstrap_class($columns){
+if ( ! function_exists( 'aLaCode_get_bootstrap_class' ) ) :
+function aLaCode_get_bootstrap_class($columns){
     switch($columns){
         case 1: return 'col-md-12'; break;
         case 2: return 'col-lg-6 col-md-6 col-sm-6 col-xs-6'; break;
@@ -344,38 +344,38 @@ function kale_get_bootstrap_class($columns){
 }
 endif;
 
-if ( ! function_exists( 'kale_get_sample' ) ) :
-function kale_get_sample($what){
-    global $kale_defaults;
+if ( ! function_exists( 'aLaCode_get_sample' ) ) :
+function aLaCode_get_sample($what){
+    global $aLaCode_defaults;
     switch($what){
-        case 'slide':           $images = $kale_defaults['kale_slide_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);
-        case 'kale-thumbnail':  $images = $kale_defaults['kale_thumbnail_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);
-        case 'full':            $images = $kale_defaults['kale_full_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);
-        case 'kale-vertical':   $images = $kale_defaults['kale_vertical_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);    
-        case 'kale-index':      $images = $kale_defaults['kale_index_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);    
+        case 'slide':           $images = $aLaCode_defaults['aLaCode_slide_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);
+        case 'aLaCode-thumbnail':  $images = $aLaCode_defaults['aLaCode_thumbnail_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);
+        case 'full':            $images = $aLaCode_defaults['aLaCode_full_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);
+        case 'aLaCode-vertical':   $images = $aLaCode_defaults['aLaCode_vertical_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);    
+        case 'aLaCode-index':      $images = $aLaCode_defaults['aLaCode_index_sample']; $rand_key = array_rand($images, 1); return ($images[$rand_key]);    
     }
 }
 endif;
 
-if ( ! function_exists( 'kale_show_custom_css_field' ) ) :
-function kale_show_custom_css_field(){
+if ( ! function_exists( 'aLaCode_show_custom_css_field' ) ) :
+function aLaCode_show_custom_css_field(){
     if(get_bloginfo('version') >= 4.7){
-        $kale_advanced_css = kale_get_option('kale_advanced_css');
-        if($kale_advanced_css == '') return false;
+        $aLaCode_advanced_css = aLaCode_get_option('aLaCode_advanced_css');
+        if($aLaCode_advanced_css == '') return false;
         else return true;
     } 
     return true;
 }
 endif;
 
-#kale_example_sidebar
-function kale_example_sidebar(){
+#aLaCode_example_sidebar
+function aLaCode_example_sidebar(){
     echo '<div class="sidebar-default sidebar-block sidebar-no-borders" >';
-    the_widget('WP_Widget_Search', 'title=' . esc_html__('Search', 'kale'), 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget widget_search">&after_widget=</div>');
-    the_widget('WP_Widget_Pages', 'title=' . esc_html__('Pages', 'kale') , 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
-    the_widget('WP_Widget_Recent_Posts', 'title=' . esc_html__('Recent Posts', 'kale') , 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
-    the_widget( 'WP_Widget_Archives', 'title=' . esc_html__('Archives', 'kale'), 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
-    the_widget( 'WP_Widget_Categories', 'title=' . esc_html__('Categories', 'kale'), 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
+    the_widget('WP_Widget_Search', 'title=' . esc_html__('Search', 'aLaCode'), 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget widget_search">&after_widget=</div>');
+    the_widget('WP_Widget_Pages', 'title=' . esc_html__('Pages', 'aLaCode') , 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
+    the_widget('WP_Widget_Recent_Posts', 'title=' . esc_html__('Recent Posts', 'aLaCode') , 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
+    the_widget( 'WP_Widget_Archives', 'title=' . esc_html__('Archives', 'aLaCode'), 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
+    the_widget( 'WP_Widget_Categories', 'title=' . esc_html__('Categories', 'aLaCode'), 'before_title=<h3 class="widget-title"><span>&after_title=</span></h3>&before_widget=<div class="default-widget widget">&after_widget=</div>');
     echo '</div>';
 }
 ?>

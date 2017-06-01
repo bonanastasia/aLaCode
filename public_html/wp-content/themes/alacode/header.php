@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and logo, navigation, header widgets
  *
- * @package kale
+ * @package aLaCode
  */
 ?>
 <!DOCTYPE html>
@@ -54,14 +54,14 @@
             <div class="header-row-2">
                 <div class="logo">
                     <?php 
-                    if(kale_get_option('kale_image_logo_show') == 1) { 
+                    if(aLaCode_get_option('aLaCode_image_logo_show') == 1) { 
                         if ( function_exists( 'the_custom_logo' ) ) the_custom_logo(); 
                     } 
                     else { 
-                        $kale_text_logo = kale_get_option('kale_text_logo');
-                        if($kale_text_logo == '') $kale_text_logo = get_bloginfo('name');
+                        $aLaCode_text_logo = aLaCode_get_option('aLaCode_text_logo');
+                        if($aLaCode_text_logo == '') $aLaCode_text_logo = get_bloginfo('name');
                     ?>
-                        <h1 class="header-logo-text"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html($kale_text_logo) ?></a></h1>
+                        <h1 class="header-logo-text"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html($aLaCode_text_logo) ?></a></h1>
                     <?php } ?>
                 </div>
                 <?php if( display_header_text() ) { ?>
@@ -76,7 +76,7 @@
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
                         <h3 type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">Menu</h3>
-                        <span class="sr-only"><?php esc_html_e('Toggle Navigation', 'kale'); ?></span>
+                        <span class="sr-only"><?php esc_html_e('Toggle Navigation', 'aLaCode'); ?></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -91,12 +91,12 @@
                                       'menu_class'        => 'nav navbar-nav',
                                       'fallback_cb'       => '',
                                       'walker'            => new wp_bootstrap_navwalker() );
-                        if(kale_get_option('kale_nav_search_icon') == 1) 
-                                $args['items_wrap'] = kale_nav_items_wrap();
+                        if(aLaCode_get_option('aLaCode_nav_search_icon') == 1) 
+                                $args['items_wrap'] = aLaCode_nav_items_wrap();
                         wp_nav_menu( $args );
                     } else {
                         //wp_page_menu(array('depth'=>1, 'show_home' => true, 'menu_class'=>'navbar-collapse collapse' ));
-                        kale_default_nav();
+                        aLaCode_default_nav();
                     }
                     ?>
                     <!-- /Navigation -->

@@ -1,4 +1,4 @@
-/*** Kale - JS ***/
+/*** aLaCode - JS ***/
 jQuery(document).ready(function($){
     $("#toggle-main_search").on("click", function (event) {
         var x = setTimeout('jQuery(".main_search .form-control").focus()', 700);

@@ -2,7 +2,7 @@
 /**
 * The main template file.
 * 
-* @package kale
+* @package aLaCode
 */
 ?>
 <?php get_header(); ?>
