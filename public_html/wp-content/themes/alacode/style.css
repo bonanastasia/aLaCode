@@ -439,8 +439,15 @@ h1.entry-title{margin-bottom:25px}
 .sidebar-borders .widget-title {text-align:center;}
 .sidebar-borders .widget-title span {display:inline-block;max-width:100%;position:relative;padding:0 26px}
 .sidebar-borders .widget-title span:before,
-.sidebar-borders .widget-title span:after{content:"";position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
+.sidebar-borders .widget-title span:after{/*content:"";*/position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
 .sidebar-borders .widget-title span:after{left:auto;right:0}
+
+/* --- About Widget --- */
+.about-widget-title{clear:both;letter-spacing:2px;position:relative;margin:30px 0 25px}
+.about-widget-title:first-child{margin-top:0}
+.widget-names{display:flex; justify-content:center;font-size:24px;font-weight: 400;}
+.about-read-more{font-size:20px;color:#fc8f9d;}
+.widget-bordered-about{text-align: center;}
 
 /* --- No Borders --- */
 .sidebar-no-borders .widget.widget_text{padding:40px 0;border-top:1px solid #000;border-bottom:1px solid #000;}
@@ -454,7 +461,7 @@ h1.entry-title{margin-bottom:25px}
 .sidebar-no-borders .widget.widget_search .widget-title {text-align:center;}
 .sidebar-no-borders .widget.widget_search .widget-title span {display:inline-block;max-width:100%;position:relative;padding:0 26px}
 .sidebar-no-borders .widget.widget_search .widget-title span:before,
-.sidebar-no-borders .widget.widget_search .widget-title span:after{content:"";position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
+.sidebar-no-borders .widget.widget_search .widget-title span:after{/*content:"";*/position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
 .sidebar-no-borders .widget.widget_search .widget-title span:after{left:auto;right:0}
 .recipe-index-widget.widget_search .search-form .form-actions{padding-top:0px}
 
@@ -474,19 +481,19 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 .widget.widget_wysija .widget_wysija label { margin-top: 20px; font-weight: 400; text-transform: uppercase; }
 .widget.widget_wysija .wysija-paragraph{ position:relative }
 .widget.widget_wysija .wysija-paragraph .formError{ right:0 !important;left:auto !important;top:auto !important;bottom:100%; }
-.widget.widget_wysija .wysija-paragraph .formError .formErrorContent:before{ content:"";width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #8e2121;position:absolute;left:50%;top:100%;margin-left:-8px }
+.widget.widget_wysija .wysija-paragraph .formError .formErrorContent:before{ /*content:"";*/width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #8e2121;position:absolute;left:50%;top:100%;margin-left:-8px }
 
 .sidebar-no-borders .widget.widget_wysija .widget-title {text-align:center;}
 .sidebar-no-borders .widget.widget_wysija .widget-title span {display:inline-block;max-width:100%;position:relative;padding:0 26px}
 .sidebar-no-borders .widget.widget_wysija .widget-title span:before,
-.sidebar-no-borders .widget.widget_wysija .widget-title span:after{content:"";position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
+.sidebar-no-borders .widget.widget_wysija .widget-title span:after{/*content:"";*/position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
 .sidebar-no-borders .widget.widget_wysija .widget-title span:after{left:auto;right:0}
 
 /* --- Recent Posts Widget With Thumbnails --- */
 .sidebar-no-borders .recent-posts-widget-with-thumbnails .rpwwt-widget .widget-title {text-align:center;}
 .sidebar-no-borders .recent-posts-widget-with-thumbnails .rpwwt-widget .widget-title span {display:inline-block;max-width:100%;position:relative;padding:0 26px}
 .sidebar-no-borders .recent-posts-widget-with-thumbnails .rpwwt-widget .widget-title span:before,
-.sidebar-no-borders .recent-posts-widget-with-thumbnails .rpwwt-widget .widget-title span:after{content:"";position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
+.sidebar-no-borders .recent-posts-widget-with-thumbnails .rpwwt-widget .widget-title span:after{/*content:"";*/position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
 .sidebar-no-borders .recent-posts-widget-with-thumbnails .rpwwt-widget .widget-title span:after{left:auto;right:0}
 .recent-posts-widget-with-thumbnails .rpwwt-widget img{float:none;margin-bottom:0; max-width: 100% !important; width: 100% !important; height: auto !important;}
 .recent-posts-widget-with-thumbnails .rpwwt-widget .rpwwt-post-title {display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:15px 0 0;font-size:12px;letter-spacing:1px;}
@@ -604,6 +611,21 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 .bp-widget { margin-top: 40px; }
 .profile-fields td.label { color: inherit; font-size: 100%; display: table-cell; text-align: inherit; }
 
+/* CUSTOM STYLES
+------------------------------------------------------------------------*/
+.sprinkle-icon{
+	height: 30px;
+}
+.two-columns{
+	margin-top: 20px;
+}
+
+/* ABOUT PAGE
+------------------------------------------------------------------------*/
+.about-main{
+	margin-top: 20px;
+}
+
 /* MEDIA QUERIES
 ------------------------------------------------------------------------*/
 	
@@ -720,7 +742,4 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 	.comment-body > .comment-meta{float:none;width:auto}
 	.comment-body > .reply,.comment-body > .comment-content{margin-left:0;padding-left:0;}
     .comment-list .children{margin-left:0}
-}
-.sprinkle-icon{
-	height: 30px;
 }
