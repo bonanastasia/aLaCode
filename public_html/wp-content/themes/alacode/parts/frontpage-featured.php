@@ -14,8 +14,8 @@ if($aLaCode_frontpage_featured_posts_show == 1) {
     $aLaCode_frontpage_featured_posts_post_2 = aLaCode_get_option('aLaCode_frontpage_featured_posts_post_2');
     $aLaCode_frontpage_featured_posts_post_3 = aLaCode_get_option('aLaCode_frontpage_featured_posts_post_3'); 
     $aLaCode_entry = 'small'; ?>
-    <!-- Frontpage Featured Posts -->
-    <div class="frontpage-featured-posts">
+    <!-- Frontpage Featured Posts TESTING!!-->
+    <div class="frontpage-featured-posts col-sm-12 col-md-8">
         <h2 class="block-title"><img class="sprinkle-icon" src="http://alacode.io/wp-content/uploads/2017/06/beforeSprinkle.png"><span><?php echo esc_html($aLaCode_frontpage_featured_posts_heading); ?></span><img class="sprinkle-icon" src="http://alacode.io/wp-content/uploads/2017/06/afterSprinkle.png"></h2>
         <div class="row" data-fluid=".entry-title">
             <div class="col-md-4">
