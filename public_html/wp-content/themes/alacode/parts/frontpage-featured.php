@@ -49,7 +49,6 @@ if($aLaCode_frontpage_featured_posts_show == 1) {
                 ?>
             </div>
         </div>
-    <hr />
     </div>
     <!-- /Frontpage Featured Posts -->
 <?php } ?>
