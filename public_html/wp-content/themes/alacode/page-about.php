@@ -36,6 +36,11 @@ Template Name: About Template
 					<img src="http://fillmurray.com/200/200">
 					<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum mollitia necessitatibus commodi adipisci voluptatem fugiat soluta delectus doloribus aperiam quam, consequatur ipsam nulla, pariatur? Fuga quis modi necessitatibus cum commodi.
 					</p>
+					<div class="social-icons">
+						<a href="https://www.instagram.com/anagoodwin/" target="_blank"><span class="flaticon-instagram-logo"></span></a>
+						<a href="https://anastasiagoodwin.com" target="_blank"><span class="flaticon-monitor-circle"></span></a>
+						<a mailto:"ana.goodwin10@gmail.com"><span class="flaticon-closed-envelope-circle"></span>
+					</div>
 				</div>
 			</section>
 		</main>

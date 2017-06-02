@@ -49,12 +49,22 @@ Template Name: Services Template
 					<h3>Ana</h3>
 					<p class="about-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum mollitia necessitatibus commodi adipisci voluptatem fugiat soluta delectus doloribus aperiam quam, consequatur ipsam nulla, pariatur? Fuga quis modi necessitatibus cum commodi.
 					</p>
+					<div class="social-icons-container">
+						<a class="social-icon-link" href="https://www.instagram.com/anagoodwin/" target="_blank"><span class="flaticon-instagram-logo social-icon"></span></a>
+						<a class="social-icon-link" href="https://anastasiagoodwin.com" target="_blank"><span class="flaticon-monitor-circle social-icon"></span></a>
+						<a class="social-icon-link" href= "mailto:ana.goodwin10@gmail.com"><span class="flaticon-closed-envelope-circle social-icon"></span></a>
+					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 text-center">
 					<img class="image-circle profile-pic" src="http://alacode.io/wp-content/uploads/2017/06/Jillian.jpg">
 					<h3>Jillian</h3>
 					<p class="about-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum mollitia necessitatibus commodi adipisci voluptatem fugiat soluta delectus doloribus aperiam quam, consequatur ipsam nulla, pariatur? Fuga quis modi necessitatibus cum commodi.
 					</p>
+					<div class="social-icons-container">
+						<a class="social-icon-link" href="https://www.instagram.com/jkenw10/" target="_blank"><span class="flaticon-instagram-logo social-icon"></span></a>
+						<a class="social-icon-link" href="http://flook.co" target="_blank"><span class="flaticon-monitor-circle social-icon"></span></a>
+						<a class="social-icon-link" href="mailto: jillian@flook.co"><span class="flaticon-closed-envelope-circle social-icon"></span></a>
+					</div>
 				</div>
 			</section>
 		</main>
