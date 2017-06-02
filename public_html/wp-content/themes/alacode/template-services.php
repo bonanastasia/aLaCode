@@ -53,6 +53,13 @@
 <!-- /Full Width -->
 
 <?php endwhile; ?>
+    <div class="frontpage-slider frontpage-posts-slider">
+        <div class="owl-carousel">
+            <div class="item">
+                <img src="http://fillmurray.com/300/400" alt="testing" />
+            </div>
+        </div>
+    </div>
 <hr />
 
 <?php get_footer(); ?>

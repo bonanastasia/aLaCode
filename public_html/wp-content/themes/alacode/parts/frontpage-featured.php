@@ -16,7 +16,7 @@ if($aLaCode_frontpage_featured_posts_show == 1) {
     $aLaCode_entry = 'small'; ?>
     <!-- Frontpage Featured Posts -->
     <div class="frontpage-featured-posts">
-        <h2 class="block-title"><img class="sprinkle-icon" src="http://i36.photobucket.com/albums/e26/anagoodwin/beforeSprinkle_zpsm6ktozfp.png"><span><?php echo esc_html($aLaCode_frontpage_featured_posts_heading); ?></span><img class="sprinkle-icon" src="http://oi36.photobucket.com/albums/e26/anagoodwin/e54a5f48-ba34-4156-af86-67bd7979c43a_zpskrrwhgxm.png"></h2>
+        <h2 class="block-title"><img class="sprinkle-icon" src="http://alacode.io/wp-content/uploads/2017/06/beforeSprinkle.png"><span><?php echo esc_html($aLaCode_frontpage_featured_posts_heading); ?></span><img class="sprinkle-icon" src="http://alacode.io/wp-content/uploads/2017/06/afterSprinkle.png"></h2>
         <div class="row" data-fluid=".entry-title">
             <div class="col-md-4">
                 <?php 
