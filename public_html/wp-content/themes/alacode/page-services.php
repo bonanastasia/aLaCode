@@ -17,10 +17,10 @@ Template Name: Services Template
 
 			<section>
 				<div class="row team-about-section">
-					<div class="col-md-6 text-center">
-						<img src="http://alacode.io/wp-content/uploads/2017/06/sprinkleconesfriends.jpg" alt="team photo">
+					<div class="col-xs-12 col-md-6 text-center">
+						<img class="team-photo" src="http://alacode.io/wp-content/uploads/2017/06/sprinkleconesfriends.jpg" alt="team photo">
 					</div>
-					<div class="col-md-4 team-about-text">
+					<div class="col-xs-12 col-md-4 team-about-text">
 						<p class="team-note"> So Ann, the question is, do you want a man or a boy? I know how I would answer. Did you enjoy your lunch, mom? You drank it fast enough. Don't leave your Uncle T-bag hanging. Yeah, that's a cultural problem is what it is. You know, your average American male is in a perpetual state of adolescence, you know, arrested development. (Hey. That's the name of the show!) How am I supposed to find someone willing to go into that musty old claptrap? It's, like, Hey, you want to go down to the whirlpool? Yeah, I don't have a husband. I call it Swing City.</p>
 						<p>
 						You might wanna lean away from that fire since you're soaked in alcohol. In fact, it was a box of Oscar's legally obtained medical marijuana. Primo bud. Real sticky weed. We need a name. Maybe "Operation Hot Mother." No, let's try to top that. (They never did.)
@@ -44,13 +44,13 @@ Template Name: Services Template
 			<h2 class="text-center services-section-header">Meet our team!</h2>
 
 			<section class="individual-about-section">
-				<div class="col-md-4 text-center">
+				<div class="col-xs-12 col-md-4 text-center">
 					<img class="image-circle profile-pic" src="http://alacode.io/wp-content/uploads/2017/06/Ana.jpg">
 					<h3>Ana</h3>
 					<p class="about-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum mollitia necessitatibus commodi adipisci voluptatem fugiat soluta delectus doloribus aperiam quam, consequatur ipsam nulla, pariatur? Fuga quis modi necessitatibus cum commodi.
 					</p>
 				</div>
-				<div class="col-md-4 text-center">
+				<div class="col-xs-12 col-md-4 text-center">
 					<img class="image-circle profile-pic" src="http://alacode.io/wp-content/uploads/2017/06/Jillian.jpg">
 					<h3>Jillian</h3>
 					<p class="about-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum mollitia necessitatibus commodi adipisci voluptatem fugiat soluta delectus doloribus aperiam quam, consequatur ipsam nulla, pariatur? Fuga quis modi necessitatibus cum commodi.
