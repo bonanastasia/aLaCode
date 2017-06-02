@@ -625,7 +625,35 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 .about-main{
 	margin-top: 20px;
 }
-
+.individual-about-section{
+	display: flex;
+	justify-content: space-around;
+}
+.team-about-section{
+	display: flex;
+	/*align-items: center;*/
+	justify-content: space-between;
+}
+.team-note{
+	/*text-align: center;*/
+}
+.signature{
+	font-size: 30px;
+	font-family: 'watermelon';
+}
+.banner-image{
+	max-width: 100%;
+	margin-bottom: 80px;
+}
+.body-divider{
+	border-top-color: #eee;
+}
+.image-circle{
+	border-radius: 50%;
+}
+.profile-pic{
+	height: 250px;
+}
 /* SERVICES PAGE
 ------------------------------------------------------------------------*/
 #services-page h1.entry-title{
@@ -669,6 +697,7 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 	margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 30px;
 }
 .services-divider{
 	border-top: 2px solid #eee;
@@ -686,6 +715,7 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 .client-testimonial{
 	padding-top: 10px;
 }
+
 
 /* MEDIA QUERIES
 ------------------------------------------------------------------------*/
