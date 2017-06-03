@@ -8,7 +8,7 @@
 
 <div class="row">
 	<div class="col-xs-12 col-md-4">
-		<img src="https://www.fillmurray.com/200/300" alt="phil-ler image">	
+		<img class="about-image-index" src="http://alacode.io/wp-content/uploads/2017/06/ana-2.jpg" alt="team image">	
 	</div>
 	<div class="col-xs-12 col-md-8">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima excepturi magni ipsam at praesentium laboriosam illum suscipit, adipisci esse odit non provident eveniet iusto id fugiat aliquid facere molestiae perspiciatis!</p>

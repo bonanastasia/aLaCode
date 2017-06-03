@@ -484,7 +484,7 @@ h1.entry-title{margin-bottom:25px}
 /* --- About Widget --- */
 .about-widget-title{clear:both;letter-spacing:2px;position:relative;margin:30px 0 25px}
 .about-widget-title:first-child{margin-top:0}
-.widget-names{display:flex; justify-content:center;font-size:24px;font-weight: 400;}
+.widget-names{display:flex; justify-content:center;font-family:'watermelon';font-size:24px;font-weight: 400;}
 .about-read-more{font-size:20px;color:#fc8f9d;}
 .widget-bordered-about{text-align: center;}
 
@@ -658,6 +658,9 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 .two-columns{
 	margin-top: 20px;
 }
+.about-image-index{
+	max-width: 100%;
+}
 
 /* ABOUT PAGE
 ------------------------------------------------------------------------*/
@@ -676,8 +679,7 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 	flex-wrap: wrap;
 }
 .team-photo{
-	max-width: 100%;
-	padding: 20px;
+	max-width: 75%;
 }
 .team-note{
 	/*text-align: center;*/
@@ -702,9 +704,13 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 }
 .social-icons-container{
 	text-align: right;
+	flex-grow: 1;
+}
+.social-icon-link{
+	font-size: 20px;
 }
 .social-icon{
-	color: #eee;
+	color: #b7b7b7;
 	font-size: 20px;
 	height: 20px;
 	text-decoration: none;
@@ -715,6 +721,22 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 }
 a:hover{
 	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+.pink-text-highlight{
+	color: #fc8f9d; 
+}
+.about-more{
+	padding-bottom: 20px;
+}
+.about-more-reveal{
+	padding-top: 20px;
+	padding-left: 0px;
 }
 /* SERVICES PAGE
 ------------------------------------------------------------------------*/
@@ -777,6 +799,9 @@ a:hover{
 .client-testimonial{
 	padding-top: 10px;
 }
+.services-sidebar{
+	border-bottom: 1px solid #eee;
+}
 
 
 /* MEDIA QUERIES
@@ -812,6 +837,12 @@ a:hover{
      body.custom-background{background-image: none !important;}
      .services-top-section{flex-wrap:wrap;justify-content: center;}
      .services-divider{display: block;}
+     .individual-about{
+     	border-bottom: 1px solid #eee;
+     }
+     .about-more{
+     	display: block;
+     }
 }
 @media (min-width: 1500px) {
 

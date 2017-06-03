@@ -37,6 +37,15 @@ function aLaCode_widgets_init() {
 		'before_title'  => '<h3 class="about-widget-title widget-title"><span>',
 		'after_title'   => '</span></h3>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar - Default - Bordered - Services', 'kale' ),
+		'id'            => 'sidebar-default-bordered-services',
+		'before_widget' => '<div id="%1$s" class="default-widget widget widget-bordered %2$s widget-bordered-services">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="services-widget-title widget-title"><span>',
+		'after_title'   => '</span></h3>',
+	) );
     
     /* Header Widgets */
     

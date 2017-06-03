@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: Services Template
+Template Name: About Page Template
 * 
 * @package kale
 */
@@ -61,7 +61,7 @@ Template Name: Services Template
 					<p class="about-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum mollitia necessitatibus commodi adipisci voluptatem fugiat soluta delectus doloribus aperiam quam, consequatur ipsam nulla, pariatur? Fuga quis modi necessitatibus cum commodi.
 					</p>
 					<div class="social-icons-container">
-						<a class="social-icon-link" href="https://www.instagram.com/jkenw10/" target="_blank"><span class="flaticon-instagram-logo social-icon"></span></a>
+						<a class="social-icon-link" href="https://www.instagram.com/jkenw10/" target="_blank">i<span class="flaticon-instagram-logo social-icon"></span></a>
 						<a class="social-icon-link" href="http://flook.co" target="_blank"><span class="flaticon-monitor-circle social-icon"></span></a>
 						<a class="social-icon-link" href="mailto: jillian@flook.co"><span class="flaticon-closed-envelope-circle social-icon"></span></a>
 					</div>
