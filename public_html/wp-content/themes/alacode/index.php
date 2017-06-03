@@ -8,10 +8,13 @@
 <?php get_header(); ?>
 
 <div class="blog-feed">
-	<?php get_template_part('parts/frontpage', 'aboutALC'); ?>
+	
 <!-- Two Columns -->
 <div class="row two-columns">
-	<?php get_template_part('parts/frontpage', 'featured'); ?>
+	<div class="col-xs-12 col-md-8">
+		<?php get_template_part('parts/frontpage', 'aboutALC'); ?>
+		<?php get_template_part('parts/frontpage', 'feed'); ?>
+	</div>
     <?php get_sidebar(); ?>
 </div>
 <!-- /Two Columns -->
