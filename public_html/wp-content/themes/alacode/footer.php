@@ -24,11 +24,6 @@
             <div class="footer-copyright"><?php echo wp_kses_post($aLaCode_footer_copyright); ?></div>
             <?php } ?>
             
-            <div class="footer-copyright">
-                <ul class="credit">
-                    <li><a href="https://www.lyrathemes.com/aLaCode/"><?php esc_html_e('aLaCode', 'aLaCode'); ?></a> <?php esc_html_e('by LyraThemes.com', 'aLaCode'); ?></a>.</li>
-                </ul>
-            </div>
             
         </div>
         <!-- /Footer -->

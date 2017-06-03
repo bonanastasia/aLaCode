@@ -65,7 +65,7 @@
                     <?php } ?>
                 </div>
                 <?php if( display_header_text() ) { ?>
-                                <div class="tagline"><img class="sprinkle-icon" src="http://alacode.io/wp-content/uploads/2017/06/beforeSprinkle.png"><?php $tagline = get_bloginfo('description'); if($tagline != '') { ?><p><?php echo esc_html($tagline); ?></p><?php } ?><img class="sprinkle-icon" src="http://alacode.io/wp-content/uploads/2017/06/afterSprinkle.png"></div>
+                                <div class="tagline"><img class="sprinkle-icon" src="http://i36.photobucket.com/albums/e26/anagoodwin/beforeSprinkle_zpsm6ktozfp.png"><?php $tagline = get_bloginfo('description'); if($tagline != '') { ?><p><?php echo esc_html($tagline); ?></p><?php } ?><img class="sprinkle-icon" src="http://oi36.photobucket.com/albums/e26/anagoodwin/e54a5f48-ba34-4156-af86-67bd7979c43a_zpskrrwhgxm.png"></div>
                 <?php } ?>
             </div>
             <!-- /Header Row 2 -->
@@ -109,7 +109,7 @@
         <!-- /Header -->
         
 <?php if(is_front_page() && !is_paged() ) { 
-get_template_part('parts/frontpage', 'banner');  
+get_template_part('parts/frontpage', 'banner'); 
 // get_template_part('parts/frontpage', 'featured'); 
 } ?>
         
