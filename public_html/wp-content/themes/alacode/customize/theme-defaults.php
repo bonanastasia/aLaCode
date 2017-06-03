@@ -19,7 +19,7 @@ $aLaCode_defaults['aLaCode_banner_heading']                   = get_bloginfo('na
 $aLaCode_defaults['aLaCode_banner_description']               = get_bloginfo('description');
 $aLaCode_defaults['aLaCode_banner_url']                       = '#';
 
-$aLaCode_defaults['aLaCode_frontpage_banner']                 = 'Posts';
+$aLaCode_defaults['aLaCode_frontpage_banner']                 = 'Banner';
 $aLaCode_defaults['aLaCode_frontpage_banner_overlay_show']	= 1;
 $aLaCode_defaults['aLaCode_frontpage_banner_overlay_color']   = '#555555';
 
@@ -35,6 +35,8 @@ $aLaCode_defaults['aLaCode_frontpage_featured_posts_post_3']  = 1;
 $aLaCode_defaults['aLaCode_frontpage_large_post_show']        = 0;
 $aLaCode_defaults['aLaCode_frontpage_large_post_heading']     = esc_html__('My Diary', 'aLaCode');
 $aLaCode_defaults['aLaCode_frontpage_large_post']             = 1;
+
+$aLaCode_defaults['aLaCode_frontpage_blog_posts_heading'] 	  = esc_html__('Recent Posts', 'aLaCode');
 
 $aLaCode_defaults['aLaCode_blog_feed_meta_show']              = 1;
 $aLaCode_defaults['aLaCode_blog_feed_date_show']              = 1;

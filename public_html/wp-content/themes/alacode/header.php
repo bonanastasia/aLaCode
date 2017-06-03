@@ -75,7 +75,7 @@
             <div class="header-row-3">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <h3 type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">Menu</h3>
+                        <button type="button" class="navbar-toggle collapsed" id="nav-button-menu" data-toggle="collapse" data-target=".header-row-3 .navbar-collapse" aria-expanded="false">Menu</button>
                         <span class="sr-only"><?php esc_html_e('Toggle Navigation', 'aLaCode'); ?></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>

@@ -81,7 +81,7 @@ a, a:hover, a:visited, a:active, a:focus{color:#000000;}
 .single .entry-content a:hover, .entry-content a:active, .entry-content a:focus{color:#000000; text-decoration:none;}
 .page .entry-content a{color:#000000; text-decoration:underline;}
 .page .entry-content a:hover, .entry-content a:active, .entry-content a:focus{color:#000000; text-decoration:none;}
-
+div.entry.entry-full{width: 90%; margin: auto;}
 
 /*body.custom-background .main-wrapper{margin:0 auto;background-color:#ffffff;box-shadow:0 0 50px rgba(0,0,0,0.06)}*/
 
@@ -177,8 +177,8 @@ img.aligncenter { max-width:100%; height:auto;}
 .form-control:focus{border-color:#f1f1f1;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:0}
 .btn{padding:10px 28px;font-size:11px;font-weight:300;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-transform:uppercase}
 
-.btn-default{background-color:#2d2d2d;border-color:#2d2d2d;color:#fff}
-.btn-default:focus,.btn-default:hover{background-color:#000;border-color:#000;color:#fff}
+.btn-default{background-color: #a5e5bd;border-color:#a5e5bd;color:#545454, font-weight:initial;}
+.btn-default:focus,.btn-default:hover{background-color:#fc8f9d;border-color:#fc8f9d;}
 
 .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="span"]{margin-bottom:0}
 .bootstrap-select > .btn{border-color:#f1f1f1;background-color:#fafafa;color:#545454;padding:6px 12px;height:34px;font-size:12px;font-style:italic;text-transform:none}
@@ -246,7 +246,7 @@ img.aligncenter { max-width:100%; height:auto;}
 
 /* --- Tagline --- */    
 .tagline{text-align:center;margin-top:15px;}
-.tagline p{display:inline-block;margin:0;position:relative;padding:0 10px; text-transform:lowercase;}
+.tagline p{display:inline-block;margin:0;position:relative;padding:0 10px; text-transform:lowercase; font-size: 18px; color: black; font-weight: 300; font-family: 'Lato', sans-serif}
 .tagline p:before,.tagline p:after{/*content:"";*/position:absolute;left:0;top:50%;margin-top:-2px;width:20px;height:4px;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4}
 .tagline p:after{left:auto;right:0}
 
@@ -659,7 +659,9 @@ padding: 10px 28px; font-size: 11px; font-weight: 300; text-transform: uppercase
 	margin-top: 20px;
 }
 .about-image-index{
-	max-width: 100%;
+  width: 100%;
+  max-height: 500px;
+  padding-bottom: 20px;
 }
 
 /* ABOUT PAGE

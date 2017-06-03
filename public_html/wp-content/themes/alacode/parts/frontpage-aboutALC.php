@@ -7,12 +7,13 @@
 ?>
 
 <div class="row">
-	<div class="col-xs-12 col-md-4">
+	<div class="col-xs-8 col-sm-6 col-md-4">
 		<img class="about-image-index" src="http://alacode.io/wp-content/uploads/2017/06/ana-2.jpg" alt="team image">	
 	</div>
 	<div class="col-xs-12 col-md-8">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima excepturi magni ipsam at praesentium laboriosam illum suscipit, adipisci esse odit non provident eveniet iusto id fugiat aliquid facere molestiae perspiciatis!</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facilis eveniet laudantium rerum! Cupiditate illo molestiae harum vel deleniti dignissimos accusamus quas. Unde harum velit quos rerum, optio praesentium quibusdam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias natus ut consequuntur repellendus asperiores et officiis id delectus rem hic ipsam illo quisquam iusto consequatur, itaque nihil, perferendis quam facere!</p>	
+		<p>Welcome to A La Code! We're Ana Goodwin and Jillian Flook. We're two web developers in Austin, Texas. We met at the Coding Bootcamp at The University of Texas, and we bonded over our mutual love of all things design, good coffee, terrible puns, and all things cactus-themed. A La Code is our joint project where we chronicle our lives and our journey as frontend developers. We hope you enjoy following along as we explore Austin! </p>	
+		<br>
+		<a class="about-read-more" href="/about">Read More...</a>
 	</div>
 </div>
 <hr>
