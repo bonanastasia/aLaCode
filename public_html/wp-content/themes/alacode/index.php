@@ -15,7 +15,7 @@
 		<?php get_template_part('parts/frontpage', 'aboutALC'); ?>
 		<?php get_template_part('parts/frontpage', 'feed'); ?>
 	</div>
-    <?php get_sidebar(); ?>
+    <?php get_sidebar('services'); ?>
 </div>
 <!-- /Two Columns -->
 <hr />

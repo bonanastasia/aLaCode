@@ -54,7 +54,7 @@ $aLaCode_sidebar_size = aLaCode_get_option('aLaCode_sidebar_size');
     </div>
     <!-- /Main Column -->
 
-    <?php if($aLaCode_pages_sidebar == 1)  get_sidebar();  ?>
+    <?php if($aLaCode_pages_sidebar == 1)  get_sidebar('services');  ?>
 
 </div>
 <!-- /Two Columns -->

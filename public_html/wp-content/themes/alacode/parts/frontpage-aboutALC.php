@@ -7,7 +7,7 @@
 ?>
 
 <div class="row">
-	<div class="col-xs-8 col-sm-6 col-md-4">
+	<div class="col-xs-12 col-sm-6 col-md-4">
 		<img class="about-image-index" src="http://alacode.io/wp-content/uploads/2017/06/ana-2.jpg" alt="team image">	
 	</div>
 	<div class="col-xs-12 col-md-8">
