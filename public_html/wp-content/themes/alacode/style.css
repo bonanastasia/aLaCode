@@ -789,9 +789,10 @@ a:visited{
 	border-top: 2px solid #eee;
 	display: none;
 }
-.company-client-title{
+.client-company-title{
 	margin-top: 0px;
 	margin-bottom: 15px;
+	color: #b7b7b7;
 }
 .big-quotes{
 	font-size: 60px;
@@ -799,11 +800,15 @@ a:visited{
     line-height: 2px;
 }
 .client-testimonial{
-	padding-top: 10px;
+	padding-top: 20px;
 }
 .services-sidebar{
 	border-bottom: 1px solid #eee;
 }
+.services-sidebar{
+	border-bottom: 1px solid #eee;
+}
+
 
 
 /* MEDIA QUERIES
@@ -845,6 +850,9 @@ a:visited{
      .about-more{
      	display: block;
      }
+     .services-border-bottom{
+     	border-bottom: 1px solid #eee;
+   	 }
 }
 @media (min-width: 1500px) {
 
